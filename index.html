@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-mp0xe8iDZ1SOEKt4ipBsT.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Packets & Movers | Moving Tips & Advice</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #f97316;
+      --primary-dark: #ea580c;
+      --dark: #172033;
+      --text: #536071;
+      --light: #f8fafc;
+      --white: #ffffff;
+      --border: #e5e7eb;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .navbar {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 23px;
+      font-weight: 800;
+    }
+
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: var(--primary);
+      color: white;
+    }
+
+    .logo span {
+      color: var(--primary);
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    nav a {
+      font-size: 15px;
+      font-weight: 600;
+      color: #4b5563;
+      transition: 0.2s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: var(--primary);
+    }
+
+    .quote-btn {
+      background: var(--primary);
+      color: white;
+      padding: 11px 20px;
+      border-radius: 8px;
+    }
+
+    .quote-btn:hover {
+      background: var(--primary-dark);
+      color: white;
+    }
+
+    /* Hero */
+    .hero {
+      background:
+        linear-gradient(135deg, rgba(23,32,51,.95), rgba(23,32,51,.82)),
+        linear-gradient(45deg, #fb923c, #f97316);
+      color: white;
+      padding: 90px 24px;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .hero-label {
+      color: #fdba74;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 6vw, 64px);
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      color: #e2e8f0;
+      font-size: 18px;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    /* Main */
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 70px 24px;
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      margin-bottom: 35px;
+      gap: 20px;
+    }
+
+    .section-heading h2 {
+      font-size: 32px;
+    }
+
+    .section-heading p {
+      color: var(--text);
+      max-width: 550px;
+    }
+
+    /* Featured article */
+    .featured {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      background: var(--light);
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 70px;
+    }
+
+    .featured-image {
+      min-height: 360px;
+      background:
+        linear-gradient(135deg, rgba(249,115,22,.2), rgba(23,32,51,.2)),
+        #dbeafe;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 100px;
+    }
+
+    .featured-content {
+      padding: 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .category {
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    .featured-content h2 {
+      font-size: 34px;
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .featured-content p {
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+
+    .meta {
+      color: #8a94a3;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    .read-more {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    /* Blog grid */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      background: white;
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(15,23,42,.09);
+    }
+
+    .card-image {
+      height: 210px;
+      display: grid;
+      place-items: center;
+      font-size: 65px;
+      background: #fff7ed;
+    }
+
+    .card:nth-child(2) .card-image {
+      background: #eff6ff;
+    }
+
+    .card:nth-child(3) .card-image {
+      background: #f0fdf4;
+    }
+
+    .card:nth-child(4) .card-image {
+      background: #fefce8;
+    }
+
+    .card:nth-child(5) .card-image {
+      background: #faf5ff;
+    }
+
+    .card:nth-child(6) .card-image {
+      background: #f0fdfa;
+    }
+
+    .card-content {
+      padding: 25px;
+    }
+
+    .card-content h3 {
+      font-size: 21px;
+      line-height: 1.3;
+      margin: 8px 0 12px;
+    }
+
+    .card-content p {
+      color: var(--text);
+      font-size: 15px;
+      margin-bottom: 18px;
+    }
+
+    /* Newsletter */
+    .newsletter {
+      margin-top: 80px;
+      background: var(--dark);
+      color: white;
+      border-radius: 20px;
+      padding: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .newsletter h2 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .newsletter p {
+      color: #cbd5e1;
+    }
+
+    .newsletter-form {
+      display: flex;
+      width: min(100%, 430px);
+    }
+
+    .newsletter-form input {
+      flex: 1;
+      min-width: 0;
+      padding: 15px;
+      border: none;
+      outline: none;
+      border-radius: 8px 0 0 8px;
+    }
+
+    .newsletter-form button {
+      border: none;
+      background: var(--primary);
+      color: white;
+      font-weight: 700;
+      padding: 0 22px;
+      border-radius: 0 8px 8px 0;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: white;
+      margin-top: 70px;
+    }
+
+    .footer-inner {
+      max-width: 1200px;
+      margin: auto;
+      padding: 55px 24px;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 50px;
+    }
+
+    footer h3 {
+      margin-bottom: 15px;
+    }
+
+    footer p,
+    footer a {
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 9px;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    .copyright {
+      border-top: 1px solid #1e293b;
+      text-align: center;
+      padding: 20px;
+      color: #64748b;
+      font-size: 13px;
+    }
+
+    /* Responsive */
+    @media (max-width: 850px) {
+      nav {
+        display: none;
+      }
+
+      .featured {
+        grid-template-columns: 1fr;
+      }
+
+      .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .newsletter {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .newsletter-form {
+        width: 100%;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .hero {
+        padding: 65px 20px;
+      }
+
+      .container {
+        padding: 50px 18px;
+      }
+
+      .featured-content {
+        padding: 30px;
+      }
+
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-heading {
+        display: block;
+      }
+
+      .section-heading p {
+        margin-top: 10px;
+      }
+
+      .newsletter {
+        padding: 35px 25px;
+      }
+
+      .newsletter-form {
+        display: block;
+      }
+
+      .newsletter-form input,
+      .newsletter-form button {
+        width: 100%;
+        height: 48px;
+        border-radius: 8px;
+      }
+
+      .newsletter-form button {
+        margin-top: 8px;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <a href="#" class="logo">
+        <div class="logo-icon">📦</div>
+        Packets <span>&</span> Movers
+      </a>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#" class="active">Blog</a>
+        <a href="#">About</a>
+        <a href="#" class="quote-btn">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-label">Packets & Movers Blog</div>
+      <h1>Move Smarter.<br>Pack Better.</h1>
+      <p>
+        Helpful moving guides, packing tips, storage advice, and expert
+        insights to make your next move simple and stress-free.
+      </p>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <main class="container">
+
+    <div class="section-heading">
+      <div>
+        <h2>Featured Article</h2>
+      </div>
+      <p>
+        Practical advice from our moving team to help you plan, pack,
+        and settle into your new home.
+      </p>
+    </div>
+
+    <!-- Featured -->
+    <article class="featured">
+      <div class="featured-image">🚚</div>
+
+      <div class="featured-content">
+        <div class="category">Moving Guide</div>
+
+        <h2>
+          The Complete Guide to Planning a Stress-Free Move
+        </h2>
+
+        <div class="meta">
+          September 18, 2026 · 8 min read
+        </div>
+
+        <p>
+          Moving doesn't have to be overwhelming. Learn how to create a
+          moving timeline, organize your belongings, pack efficiently,
+          and prepare your new home before moving day.
+        </p>
+
+        <a href="#" class="read-more">Read Full Article →</a>
+      </div>
+    </article>
+
+    <!-- Latest -->
+    <div class="section-heading">
+      <div>
+        <h2>Latest from the Blog</h2>
+      </div>
+      <p>
+        Tips and ideas for homeowners, renters, families, and businesses.
+      </p>
+    </div>
+
+    <div class="blog-grid">
+
+      <article class="card">
+        <div class="card-image">📦</div>
+        <div class="card-content">
+          <div class="category">Packing Tips</div>
+          <h3>10 Packing Mistakes You Should Avoid</h3>
+          <div class="meta">September 12, 2026 · 5 min read</div>
+          <p>
+            Avoid damaged belongings and last-minute stress with these
+            simple packing mistakes to watch out for.
+          </p>
+          <a href="#" class="read-more">Read Article →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-image">🏠</div>
+        <div class="card-content">
+          <div class="category">Moving Home</div>
+          <h3>How to Prepare Your Home Before Moving Day</h3>
+          <div class="meta">September 8, 2026 · 6 min read</div>
+          <p>
+            A simple checklist to help you prepare every room before
+            the movers arrive.
+          </p>
+          <a href="#" class="read-more">Read Article →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-image">🚛</div>
+        <div class="card-content">
+          <div class="category">Moving Day</div>
+          <h3>What to Expect on Moving Day</h3>
+          <div class="meta">September 3, 2026 · 4 min read</div>
+          <p>
+            From loading the truck to arriving at your new home,
+            here's what you can expect.
+          </p>
+          <a href="#" class="read-more">Read Article →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-image">🧳</div>
+        <div class="card-content">
+          <div class="category">Organization</div>
+          <h3>How to Declutter Before Your Move</h3>
+          <div class="meta">August 27, 2026 · 5 min read</div>
+          <p>
+            Moving is the perfect opportunity to decide what to keep,
+            donate, sell, or throw away.
+          </p>
+          <a href="#" class="read-more">Read Article →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-image">🏢</div>
+        <div class="card-content">
+          <div class="category">Business Moving</div>
+          <h3>Planning an Office Move Without Disruption</h3>
+          <div class="meta">August 20, 2026 · 7 min read</div>
+          <p>
+            Keep your business running smoothly with a well-organized
+            office relocation plan.
+          </p>
+          <a href="#" class="read-more">Read Article →</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-image">📋</div>
+        <div class="card-content">
+          <div class="category">Checklist</div>
+          <h3>The Ultimate Moving Day Checklist</h3>
+          <div class="meta">August 14, 2026 · 6 min read</div>
+          <p>
+            Keep track of the important details with this easy,
+            room-by-room moving checklist.
+          </p>
+          <a href="#" class="read-more">Read Article →</a>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div>
+        <h2>Get Moving Tips in Your Inbox</h2>
+        <p>
+          Subscribe for practical packing and moving advice.
+        </p>
+      </div>
+
+      <form class="newsletter-form">
+        <input
+          type="email"
+          placeholder="Your email address"
+          aria-label="Email address"
+          required
+        />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+  </main>
+  <!-- =========================
+     FAQ SECTION
+========================= -->
+
+<section class="faq-section">
+
+  <div class="faq-heading">
+    <div class="category">FAQ</div>
+    <h2>Frequently Asked Questions</h2>
+    <p>
+      Have questions about packing, moving, storage, or moving day?
+      We've answered some of the questions our customers ask most often.
+    </p>
+  </div>
+
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>How far in advance should I book my movers?</span>
+        <span class="faq-icon">+</span>
+      </button>
+
+      <div class="faq-answer">
+        <p>
+          We recommend booking your move as early as possible, especially
+          during weekends, holidays, and peak moving seasons. For a typical
+          household move, booking several weeks in advance gives you more
+          flexibility with your preferred date and time.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>Do you provide packing services?</span>
+        <span class="faq-icon">+</span>
+      </button>
+
+      <div class="faq-answer">
+        <p>
+          Yes. Our team can handle everything from packing a few fragile
+          items to packing your entire home. We can carefully organize
+          boxes, protect furniture, and prepare your belongings for
+          transportation.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>Do I need to provide my own moving boxes?</span>
+        <span class="faq-icon">+</span>
+      </button>
+
+      <div class="faq-answer">
+        <p>
+          Not necessarily. We can provide a range of packing materials,
+          including moving boxes, protective wrap, packing paper, tape,
+          and other supplies. If you prefer to pack yourself, we can also
+          help you determine how many supplies you'll need.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>How do you protect furniture during a move?</span>
+        <span class="faq-icon">+</span>
+      </button>
+
+      <div class="faq-answer">
+        <p>
+          Furniture can be protected using moving blankets, protective
+          wrapping, padding, and careful handling. Larger pieces may also
+          be disassembled when appropriate and safely reassembled at the
+          destination.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>Can you move fragile or valuable items?</span>
+        <span class="faq-icon">+</span>
+      </button>
+
+      <div class="faq-answer">
+        <p>
+          We can assist with carefully packing and transporting many
+          fragile household items. During your estimate, let us know about
+          particularly delicate or valuable belongings so we can discuss
+          the appropriate handling and packing requirements.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>Do you offer storage solutions?</span>
+        <span class="faq-icon">+</span>
+      </button>
+
+      <div class="faq-answer">
+        <p>
+          Storage options can be useful when your move-out and move-in
+          dates don't line up. Contact our team to discuss your storage
+          requirements and available options.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>What should I do on moving day?</span>
+        <span class="faq-icon">+</span>
+      </button>
+
+      <div class="faq-answer">
+        <p>
+          Keep important documents, medications, valuables, chargers,
+          toiletries, and a change of clothes with you. Make sure pathways
+          are clear and that pets and children are safely out of the way
+          while the moving team is working.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        <span>How can I get a moving quote?</span>
+        <span class="faq-icon">+</span>
+      </button>
+
+      <div class="faq-answer">
+        <p>
+          Getting started is easy. Contact Packets & Movers with details
+          about your move, including your locations, approximate move date,
+          home size, and any special items. Our team can then discuss the
+          next steps for your quote.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="faq-cta">
+    <div>
+      <h3>Still have questions?</h3>
+      <p>
+        Our moving specialists are happy to help you plan your move.
+      </p>
+    </div>
+
+    <a href="#" class="faq-button">Contact Our Team →</a>
+  </div>
+
+</section>
+
+
+<!-- =========================
+     STRONGER FOOTER
+========================= -->
+
+<footer class="site-footer">
+
+  <div class="footer-top">
+
+    <div class="footer-brand">
+
+      <a href="#" class="footer-logo">
+        <span class="footer-logo-icon">📦</span>
+        <span>Packets <b>&</b> Movers</span>
+      </a>
+
+      <p>
+        Making moving simpler, safer, and more organized. From careful
+        packing to reliable transportation, we're here to help make your
+        next move a smoother experience.
+      </p>
+
+      <div class="footer-socials">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="X">𝕏</a>
+      </div>
+
+    </div>
+
+
+    <div class="footer-column">
+
+      <h4>Our Services</h4>
+
+      <a href="#">Residential Moving</a>
+      <a href="#">Commercial Moving</a>
+      <a href="#">Packing Services</a>
+      <a href="#">Furniture Moving</a>
+      <a href="#">Long-Distance Moving</a>
+      <a href="#">Storage Solutions</a>
+
+    </div>
+
+
+    <div class="footer-column">
+
+      <h4>Quick Links</h4>
+
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Our Services</a>
+      <a href="#">Moving Blog</a>
+      <a href="#">Moving Checklist</a>
+      <a href="#">FAQs</a>
+      <a href="#">Get a Quote</a>
+
+    </div>
+
+
+    <div class="footer-column footer-contact">
+
+      <h4>Get In Touch</h4>
+
+      <div class="contact-item">
+        <span>📍</span>
+        <p>
+          123 Moving Avenue<br>
+          Your City, ST 00000
+        </p>
+      </div>
+
+      <div class="contact-item">
+        <span>📞</span>
+        <a href="tel:+18005550199">
+          +1 (800) 555-0199
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <span>✉️</span>
+        <a href="mailto:hello@packetsmovers.com">
+          hello@packetsmovers.com
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <span>🕐</span>
+        <p>
+          Mon – Sat<br>
+          8:00 AM – 7:00 PM
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Footer CTA -->
+
+  <div class="footer-cta">
+
+    <div>
+      <span class="footer-cta-label">READY FOR YOUR NEXT MOVE?</span>
+
+      <h2>
+        Let's make moving the easiest part of your day.
+      </h2>
+
+      <p>
+        Tell us what you need and our team will help you plan the next step.
+      </p>
+    </div>
+
+    <a href="#" class="footer-quote-button">
+      Get Your Free Quote
+      <span>→</span>
+    </a>
+
+  </div>
+
+
+  <!-- Footer Bottom -->
+
+  <div class="footer-bottom">
+
+    <p>
+      © 2026 Packets & Movers. All rights reserved.
+    </p>
+
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Accessibility</a>
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- =========================
+     FAQ + FOOTER CSS
+========================= -->
+
+<style>
+
+  /* FAQ */
+
+  .faq-section {
+    max-width: 1000px;
+    margin: 90px auto 0;
+    padding: 0 24px;
+  }
+
+  .faq-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+  }
+
+  .faq-heading h2 {
+    font-size: 38px;
+    margin: 8px 0 15px;
+  }
+
+  .faq-heading p {
+    color: #64748b;
+    font-size: 16px;
+  }
+
+  .faq-container {
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .faq-question {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    padding: 24px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    cursor: pointer;
+    color: #172033;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .faq-question:hover {
+    color: #f97316;
+  }
+
+  .faq-icon {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    border-radius: 50%;
+    background: #fff7ed;
+    color: #f97316;
+    display: grid;
+    place-items: center;
+    font-size: 21px;
+    font-weight: 400;
+    transition: .25s;
+  }
+
+  .faq-item.active .faq-icon {
+    background: #f97316;
+    color: white;
+    transform: rotate(45deg);
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease;
+  }
+
+  .faq-answer p {
+    padding: 0 45px 24px 5px;
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .faq-item.active .faq-answer {
+    max-height: 300px;
+  }
+
+  .faq-cta {
+    margin-top: 45px;
+    padding: 30px 35px;
+    border-radius: 15px;
+    background: #fff7ed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+  }
+
+  .faq-cta h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+
+  .faq-cta p {
+    color: #64748b;
+  }
+
+  .faq-button {
+    background: #f97316;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 8px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .faq-button:hover {
+    background: #ea580c;
+  }
+
+
+  /* FOOTER */
+
+  .site-footer {
+    margin-top: 100px;
+    background: #0b1220;
+    color: white;
+  }
+
+  .footer-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 24px;
+    display: grid;
+    grid-template-columns: 1.7fr 1fr 1fr 1.3fr;
+    gap: 50px;
+  }
+
+  .footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 21px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+
+  .footer-logo b {
+    color: #f97316;
+  }
+
+  .footer-logo-icon {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border-radius: 9px;
+    background: #f97316;
+  }
+
+  .footer-brand > p {
+    max-width: 360px;
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .footer-socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+  }
+
+  .footer-socials a {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #273449;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #cbd5e1;
+    font-size: 14px;
+    font-weight: 700;
+    transition: .2s;
+  }
+
+  .footer-socials a:hover {
+    background: #f97316;
+    border-color: #f97316;
+    color: white;
+  }
+
+  .footer-column h4 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .footer-column > a {
+    display: block;
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 11px;
+    transition: .2s;
+  }
+
+  .footer-column > a:hover {
+    color: #f97316;
+    padding-left: 3px;
+  }
+
+  .contact-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 17px;
+    align-items: flex-start;
+  }
+
+  .contact-item > span {
+    font-size: 16px;
+  }
+
+  .contact-item p,
+  .contact-item a {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .contact-item a:hover {
+    color: #f97316;
+  }
+
+
+  /* Footer CTA */
+
+  .footer-cta {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 38px 45px;
+    border-radius: 18px;
+    background:
+      linear-gradient(
+        120deg,
+        #f97316,
+        #ea580c
+      );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+  }
+
+  .footer-cta-label {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #fed7aa;
+  }
+
+  .footer-cta h2 {
+    font-size: 27px;
+    line-height: 1.25;
+    margin: 6px 0;
+  }
+
+  .footer-cta p {
+    color: #ffedd5;
+    font-size: 14px;
+  }
+
+  .footer-quote-button {
+    background: white;
+    color: #ea580c;
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-weight: 800;
+    white-space: nowrap;
+    transition: .2s;
+  }
+
+  .footer-quote-button span {
+    margin-left: 8px;
+  }
+
+  .footer-quote-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  }
+
+
+  /* Footer Bottom */
+
+  .footer-bottom {
+    max-width: 1200px;
+    margin: 50px auto 0;
+    padding: 22px 24px;
+    border-top: 1px solid #1e293b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .footer-bottom p {
+    color: #64748b;
+    font-size: 13px;
+  }
+
+  .footer-legal {
+    display: flex;
+    gap: 22px;
+  }
+
+  .footer-legal a {
+    color: #64748b;
+    font-size: 13px;
+  }
+
+  .footer-legal a:hover {
+    color: white;
+  }
+
+
+  /* Responsive */
+
+  @media (max-width: 900px) {
+
+    .footer-top {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-brand {
+      grid-column: span 2;
+    }
+
+    .footer-cta {
+      margin: 0 24px;
+    }
+
+  }
+
+  @media (max-width: 600px) {
+
+    .faq-heading h2 {
+      font-size: 30px;
+    }
+
+    .faq-cta {
+      display: block;
+    }
+
+    .faq-button {
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .footer-top {
+      grid-template-columns: 1fr;
+      gap: 35px;
+    }
+
+    .footer-brand {
+      grid-column: span 1;
+    }
+
+    .footer-cta {
+      display: block;
+      padding: 30px 25px;
+    }
+
+    .footer-quote-button {
+      display: inline-block;
+      margin-top: 22px;
+    }
+
+    .footer-bottom {
+      display: block;
+    }
+
+    .footer-legal {
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+
+  }
+
+</style>
+
+
+<!-- =========================
+     FAQ JAVASCRIPT
+========================= -->
+
+<script>
+
+  const faqQuestions =
+    document.querySelectorAll(".faq-question");
+
+  faqQuestions.forEach((question) => {
+
+    question.addEventListener("click", () => {
+
+      const currentItem =
+        question.parentElement;
+
+      document
+        .querySelectorAll(".faq-item")
+        .forEach((item) => {
+
+          if (item !== currentItem) {
+            item.classList.remove("active");
+          }
+
+        });
+
+      currentItem.classList.toggle("active");
+
+    });
+
+  });
+
+</script>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+
+      <div>
+        <h3>📦 Packets & Movers</h3>
+        <p>
+          Professional packing and moving services designed to make
+          every move easier, safer, and more organized.
+        </p>
+      </div>
+
+      <div>
+        <h3>Explore</h3>
+        <a href="#">Home</a>
+        <a href="#">Our Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <a href="tel:+18005550199">+1 (800) 555-0199</a>
+        <a href="mailto:hello@packetsmovers.com">
+          hello@packetsmovers.com
+        </a>
+        <p>Mon–Sat: 8:00 AM – 7:00 PM</p>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 Packets & Movers. All rights reserved.
+    </div>
+  </footer>
+
+
+  <script>
+    document.querySelector(".newsletter-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const email = this.querySelector("input").value;
+
+      if (email) {
+        alert("Thanks for subscribing to Packets & Movers!");
+        this.reset();
+      }
+    });
+  </script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6aad487473b27934463d9f62/1k2qe61vt';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>
